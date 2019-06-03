@@ -1,0 +1,17 @@
+<app-header></app-header>
+
+
+<div class="container">
+  <button class="btn btn-primary" (click)="changeRoute()">Add Product</button>
+  <div class="row">
+    <div class="col col-md-2" *ngFor = "let item of Products">
+      <img [src]="item.image" alt="image.jpg">
+      <div>
+        <h6>{{item.name}}</h6>
+        <p>{{item.price}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>
